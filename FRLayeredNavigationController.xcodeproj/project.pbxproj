@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3313E6F425CB4F1F0022E808 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3313E6F325CB4F1F0022E808 /* Package.swift */; };
 		52ED6E2615DCC1E900A8FC39 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52ED6E2515DCC1E900A8FC39 /* MainViewController.m */; };
 		687661CC15D997BE009DF4A4 /* FRNavigationBar.h in Headers */ = {isa = PBXBuildFile; fileRef = 687661CA15D997BE009DF4A4 /* FRNavigationBar.h */; };
 		687661CD15D997BE009DF4A4 /* FRNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 687661CB15D997BE009DF4A4 /* FRNavigationBar.m */; };
@@ -55,6 +56,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3313E6F225CB4F1F0022E808 /* FRLayeredNavigationController-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FRLayeredNavigationController-Bridging-Header.h"; sourceTree = "<group>"; };
+		3313E6F325CB4F1F0022E808 /* Package.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		52ED6E2415DCC1E900A8FC39 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		52ED6E2515DCC1E900A8FC39 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		687661CA15D997BE009DF4A4 /* FRNavigationBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRNavigationBar.h; sourceTree = "<group>"; };
@@ -131,6 +134,7 @@
 		DA4FACBB15591AB300D85A7E = {
 			isa = PBXGroup;
 			children = (
+				3313E6F325CB4F1F0022E808 /* Package.swift */,
 				DAB8C6BF155EBD3100340CB7 /* QuartzCore.framework */,
 				DAB8C6BC155EBD1200340CB7 /* CoreImage.framework */,
 				DA4FAD2715591C6E00D85A7E /* AUTHORS */,
@@ -141,6 +145,7 @@
 				DA4FACC815591AB300D85A7E /* Frameworks */,
 				DA4FACC715591AB300D85A7E /* Products */,
 				DA6609AF1567FD390033DBFF /* Screenshots */,
+				3313E6F225CB4F1F0022E808 /* FRLayeredNavigationController-Bridging-Header.h */,
 			);
 			sourceTree = "<group>";
 		};
@@ -304,6 +309,9 @@
 			attributes = {
 				LastUpgradeCheck = 0710;
 				TargetAttributes = {
+					DA4FACC515591AB300D85A7E = {
+						LastSwiftMigration = 1240;
+					};
 					DA4FAD0115591BD500D85A7E = {
 						DevelopmentTeam = CSF698GDJG;
 					};
@@ -314,6 +322,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = DA4FACBB15591AB300D85A7E;
@@ -350,6 +359,7 @@
 				DA5B05A41559296E00C93809 /* UIViewController+FRLayeredNavigationController.m in Sources */,
 				DA4FACF515591B6700D85A7E /* FRLayerChromeView.m in Sources */,
 				8FC655BF17F717110025EA62 /* FRiOSVersion.m in Sources */,
+				3313E6F425CB4F1F0022E808 /* Package.swift in Sources */,
 				DA4FACF715591B6700D85A7E /* FRLayerController.m in Sources */,
 				DA4FACF915591B6700D85A7E /* FRLayeredNavigationController.m in Sources */,
 				DA4FACFB15591B6700D85A7E /* FRLayeredNavigationItem.m in Sources */,
@@ -507,6 +517,7 @@
 		DA4FACD415591AB300D85A7E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_WARN_CXX0X_EXTENSIONS = YES;
 				CLANG_WARN_OBJC_RECEIVER_WEAK = YES;
 				CLANG_WARN_OBJC_REPEATED_USE_OF_WEAK = YES;
@@ -519,10 +530,14 @@
 				GCC_WARN_HIDDEN_VIRTUAL_FUNCTIONS = YES;
 				GCC_WARN_INHIBIT_ALL_WARNINGS = NO;
 				GCC_WARN_NON_VIRTUAL_DESTRUCTOR = YES;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				RUN_CLANG_STATIC_ANALYZER = YES;
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "FRLayeredNavigationController-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				WARNING_CFLAGS = "-Wno-gnu";
 			};
 			name = Debug;
@@ -530,6 +545,7 @@
 		DA4FACD515591AB300D85A7E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_WARN_CXX0X_EXTENSIONS = YES;
 				CLANG_WARN_OBJC_RECEIVER_WEAK = YES;
 				CLANG_WARN_OBJC_REPEATED_USE_OF_WEAK = YES;
@@ -542,10 +558,13 @@
 				GCC_WARN_HIDDEN_VIRTUAL_FUNCTIONS = YES;
 				GCC_WARN_INHIBIT_ALL_WARNINGS = NO;
 				GCC_WARN_NON_VIRTUAL_DESTRUCTOR = YES;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				RUN_CLANG_STATIC_ANALYZER = YES;
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "FRLayeredNavigationController-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				WARNING_CFLAGS = "-Wno-gnu";
 			};
 			name = Release;
