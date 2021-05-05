@@ -67,7 +67,6 @@
 		D98F9C8715C2843E00E1A3FF /* FRDLog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FRDLog.h; sourceTree = "<group>"; };
 		DA4FACC615591AB300D85A7E /* libFRLayeredNavigationController.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libFRLayeredNavigationController.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA4FACC915591AB300D85A7E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		DA4FACCD15591AB300D85A7E /* FRLayeredNavigationController-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FRLayeredNavigationController-Prefix.pch"; sourceTree = "<group>"; };
 		DA4FACEA15591B6700D85A7E /* FRLayerChromeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRLayerChromeView.h; sourceTree = "<group>"; };
 		DA4FACEB15591B6700D85A7E /* FRLayerChromeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRLayerChromeView.m; sourceTree = "<group>"; };
 		DA4FACEC15591B6700D85A7E /* FRLayerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = FRLayerController.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
@@ -199,7 +198,6 @@
 		DA4FACCC15591AB300D85A7E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				DA4FACCD15591AB300D85A7E /* FRLayeredNavigationController-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
